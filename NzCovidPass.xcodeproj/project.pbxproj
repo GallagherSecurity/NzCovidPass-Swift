@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3103566267FEB4E00864E6A /* libNzCovidPass.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3103551267FEA9E00864E6A /* libNzCovidPass.a */; };
+		D31DE0912766E98200C80377 /* LibCbor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE0882766E98200C80377 /* LibCbor.swift */; };
+		D31DE0932766E98200C80377 /* CwtSecurityToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE08A2766E98200C80377 /* CwtSecurityToken.swift */; };
+		D31DE0942766E98200C80377 /* DecentralizedIdentifierDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE08B2766E98200C80377 /* DecentralizedIdentifierDocument.swift */; };
+		D31DE0962766E98200C80377 /* CwtSecurityTokenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE08D2766E98200C80377 /* CwtSecurityTokenValidator.swift */; };
+		D31DE0972766E98200C80377 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE08E2766E98200C80377 /* Base32.swift */; };
+		D31DE0982766E98200C80377 /* PassVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE08F2766E98200C80377 /* PassVerifier.swift */; };
+		D31DE0992766E98200C80377 /* PublicCovidPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE0902766E98200C80377 /* PublicCovidPass.swift */; };
+		D31DE0A12766E99800C80377 /* Base32Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE09C2766E99800C80377 /* Base32Tests.swift */; };
+		D31DE0A22766E99800C80377 /* LibCborTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE09D2766E99800C80377 /* LibCborTests.swift */; };
+		D31DE0A32766E99800C80377 /* CwtSecurityTokenReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE09E2766E99800C80377 /* CwtSecurityTokenReaderTests.swift */; };
+		D31DE0A42766E99800C80377 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE09F2766E99800C80377 /* TestHelpers.swift */; };
+		D31DE0A52766E99800C80377 /* PassVerifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DE0A02766E99800C80377 /* PassVerifierTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3103567267FEB4E00864E6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3103549267FEA9E00864E6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3103550267FEA9E00864E6A;
+			remoteInfo = NzCovidPass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D310354F267FEA9E00864E6A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D3103551267FEA9E00864E6A /* libNzCovidPass.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNzCovidPass.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3103561267FEB4E00864E6A /* NzCovidPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NzCovidPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31DE0882766E98200C80377 /* LibCbor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibCbor.swift; path = Sources/NzCovidPass/LibCbor.swift; sourceTree = "<group>"; };
+		D31DE08A2766E98200C80377 /* CwtSecurityToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CwtSecurityToken.swift; path = Sources/NzCovidPass/CwtSecurityToken.swift; sourceTree = "<group>"; };
+		D31DE08B2766E98200C80377 /* DecentralizedIdentifierDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecentralizedIdentifierDocument.swift; path = Sources/NzCovidPass/DecentralizedIdentifierDocument.swift; sourceTree = "<group>"; };
+		D31DE08D2766E98200C80377 /* CwtSecurityTokenValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CwtSecurityTokenValidator.swift; path = Sources/NzCovidPass/CwtSecurityTokenValidator.swift; sourceTree = "<group>"; };
+		D31DE08E2766E98200C80377 /* Base32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base32.swift; path = Sources/NzCovidPass/Base32.swift; sourceTree = "<group>"; };
+		D31DE08F2766E98200C80377 /* PassVerifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassVerifier.swift; path = Sources/NzCovidPass/PassVerifier.swift; sourceTree = "<group>"; };
+		D31DE0902766E98200C80377 /* PublicCovidPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublicCovidPass.swift; path = Sources/NzCovidPass/PublicCovidPass.swift; sourceTree = "<group>"; };
+		D31DE09C2766E99800C80377 /* Base32Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32Tests.swift; sourceTree = "<group>"; };
+		D31DE09D2766E99800C80377 /* LibCborTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibCborTests.swift; sourceTree = "<group>"; };
+		D31DE09E2766E99800C80377 /* CwtSecurityTokenReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwtSecurityTokenReaderTests.swift; sourceTree = "<group>"; };
+		D31DE09F2766E99800C80377 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		D31DE0A02766E99800C80377 /* PassVerifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassVerifierTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D310354E267FEA9E00864E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D310355E267FEB4E00864E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3103566267FEB4E00864E6A /* libNzCovidPass.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3103548267FEA9E00864E6A = {
+			isa = PBXGroup;
+			children = (
+				D31DE09B2766E99800C80377 /* NzCovidPassTests */,
+				D31DE08E2766E98200C80377 /* Base32.swift */,
+				D31DE08A2766E98200C80377 /* CwtSecurityToken.swift */,
+				D31DE08D2766E98200C80377 /* CwtSecurityTokenValidator.swift */,
+				D31DE08B2766E98200C80377 /* DecentralizedIdentifierDocument.swift */,
+				D31DE0882766E98200C80377 /* LibCbor.swift */,
+				D31DE08F2766E98200C80377 /* PassVerifier.swift */,
+				D31DE0902766E98200C80377 /* PublicCovidPass.swift */,
+				D3103552267FEA9E00864E6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3103552267FEA9E00864E6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3103551267FEA9E00864E6A /* libNzCovidPass.a */,
+				D3103561267FEB4E00864E6A /* NzCovidPassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D31DE09B2766E99800C80377 /* NzCovidPassTests */ = {
+			isa = PBXGroup;
+			children = (
+				D31DE09C2766E99800C80377 /* Base32Tests.swift */,
+				D31DE09D2766E99800C80377 /* LibCborTests.swift */,
+				D31DE09E2766E99800C80377 /* CwtSecurityTokenReaderTests.swift */,
+				D31DE09F2766E99800C80377 /* TestHelpers.swift */,
+				D31DE0A02766E99800C80377 /* PassVerifierTests.swift */,
+			);
+			name = NzCovidPassTests;
+			path = Tests/NzCovidPassTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3103550267FEA9E00864E6A /* NzCovidPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3103558267FEA9E00864E6A /* Build configuration list for PBXNativeTarget "NzCovidPass" */;
+			buildPhases = (
+				D310354D267FEA9E00864E6A /* Sources */,
+				D310354E267FEA9E00864E6A /* Frameworks */,
+				D310354F267FEA9E00864E6A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NzCovidPass;
+			productName = NzCovidPass;
+			productReference = D3103551267FEA9E00864E6A /* libNzCovidPass.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D3103560267FEB4E00864E6A /* NzCovidPassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3103569267FEB4E00864E6A /* Build configuration list for PBXNativeTarget "NzCovidPassTests" */;
+			buildPhases = (
+				D310355D267FEB4E00864E6A /* Sources */,
+				D310355E267FEB4E00864E6A /* Frameworks */,
+				D310355F267FEB4E00864E6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3103568267FEB4E00864E6A /* PBXTargetDependency */,
+			);
+			name = NzCovidPassTests;
+			productName = NzCovidPassTests;
+			productReference = D3103561267FEB4E00864E6A /* NzCovidPassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3103549267FEA9E00864E6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					D3103550267FEA9E00864E6A = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1310;
+					};
+					D3103560267FEB4E00864E6A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = D310354C267FEA9E00864E6A /* Build configuration list for PBXProject "NzCovidPass" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3103548267FEA9E00864E6A;
+			productRefGroup = D3103552267FEA9E00864E6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3103550267FEA9E00864E6A /* NzCovidPass */,
+				D3103560267FEB4E00864E6A /* NzCovidPassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D310355F267FEB4E00864E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D310354D267FEA9E00864E6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31DE0992766E98200C80377 /* PublicCovidPass.swift in Sources */,
+				D31DE0982766E98200C80377 /* PassVerifier.swift in Sources */,
+				D31DE0942766E98200C80377 /* DecentralizedIdentifierDocument.swift in Sources */,
+				D31DE0972766E98200C80377 /* Base32.swift in Sources */,
+				D31DE0932766E98200C80377 /* CwtSecurityToken.swift in Sources */,
+				D31DE0912766E98200C80377 /* LibCbor.swift in Sources */,
+				D31DE0962766E98200C80377 /* CwtSecurityTokenValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D310355D267FEB4E00864E6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31DE0A12766E99800C80377 /* Base32Tests.swift in Sources */,
+				D31DE0A52766E99800C80377 /* PassVerifierTests.swift in Sources */,
+				D31DE0A32766E99800C80377 /* CwtSecurityTokenReaderTests.swift in Sources */,
+				D31DE0A22766E99800C80377 /* LibCborTests.swift in Sources */,
+				D31DE0A42766E99800C80377 /* TestHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3103568267FEB4E00864E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3103550267FEA9E00864E6A /* NzCovidPass */;
+			targetProxy = D3103567267FEB4E00864E6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D3103556267FEA9E00864E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3103557267FEA9E00864E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3103559267FEA9E00864E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSE77454YY;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D310355A267FEA9E00864E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSE77454YY;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D310356A267FEB4E00864E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSE77454YY;
+				INFOPLIST_FILE = NzCovidPassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orionedwards.NzCovidPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D310356B267FEB4E00864E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSE77454YY;
+				INFOPLIST_FILE = NzCovidPassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orionedwards.NzCovidPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D310354C267FEA9E00864E6A /* Build configuration list for PBXProject "NzCovidPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3103556267FEA9E00864E6A /* Debug */,
+				D3103557267FEA9E00864E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3103558267FEA9E00864E6A /* Build configuration list for PBXNativeTarget "NzCovidPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3103559267FEA9E00864E6A /* Debug */,
+				D310355A267FEA9E00864E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3103569267FEB4E00864E6A /* Build configuration list for PBXNativeTarget "NzCovidPassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D310356A267FEB4E00864E6A /* Debug */,
+				D310356B267FEB4E00864E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3103549267FEA9E00864E6A /* Project object */;
+}
