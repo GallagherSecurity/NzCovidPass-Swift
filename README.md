@@ -23,7 +23,7 @@ import NzCovidPass
 let passPayload = "NZCP:/1/...." // get this from scanning a QR code
 let verifier = PassVerifier()
 do {
-    let passContents = try verifier.verify(passPayload: barcode)
+    let passContents = try verifier.verify(passPayload: passPayload)
     let givenName = passContents.payload.credential?.credentialSubject.givenName ?? ""
     let familyNameCandidate = passContents.payload.credential?.credentialSubject.familyName
     let dateOfBirth = passContents.payload.credential?.credentialSubject.dateOfBirth ?? ""
