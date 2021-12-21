@@ -5,6 +5,52 @@ Copyright (c) 2021 Gallagher Group Ltd
 
 Licensed under the MIT License
 
+## Overview:
+
+This is a self-contained implementation of a verifier for the NZ COVID Pass format, written entirely in swift.
+It does not rely on any external servers, API's or other things, and can function purely offline.
+
+### Using the library:
+
+You should be able to import the library directly using Swift Package Manager, by referencing this GitHub repository.
+Alternatively, you can clone it and reference the xcodeproj from your existing Xcode application project or workspace.
+
+### Example:
+
+```swift
+import NzCovidPass
+
+let passPayload = "NZCP:/1/...." // get this from scanning a QR code
+let verifier = PassVerifier()
+do {
+    let passContents = try verifier.verify(passPayload: barcode)
+    let givenName = passContents.payload.credential?.credentialSubject.givenName ?? ""
+    let familyNameCandidate = passContents.payload.credential?.credentialSubject.familyName
+    let dateOfBirth = passContents.payload.credential?.credentialSubject.dateOfBirth ?? ""
+            
+    let fullName: String
+    if let familyName = familyNameCandidate {
+        fullName = "\(givenName) \(familyName)"
+    } else {
+        fullName = givenName
+    }
+    
+    let expiry = passContents.payload.expiry ?? Date.distantPast
+} catch let err {
+    switch error {
+    case PassVerificationError.invalidPrefix, PassVerificationError.invalidPassComponents:
+        print("This is not an NZ Covid Pass QR Code.")
+    case CwtSecurityTokenValidationError.expired:
+        print("Pass Expired.")
+    case CwtSecurityTokenValidationError.notYetValid:
+        print("Pass Not Active.")
+    default:
+        // any kind of structural or signature error just results in "not issued by the ministry of health"
+        print("This pass was not issued by the Ministry of Health.")
+    }
+}
+```
+
 ## Notes:
 Currently this does not dynamically download DID documents (public keys); rather the NZCP test key, and production key z12Kf7UQ are embedded in the source code. This has the advantage that it always works offline, there is no "first run" internet connection required, however it does mean if the ministry of health issues a new production keypair, then the library will need to be updated.
 
