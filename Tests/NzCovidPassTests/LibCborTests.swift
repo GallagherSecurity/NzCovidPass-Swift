@@ -326,6 +326,11 @@ class CborWriteTests: XCTestCase {
         XCTAssertEqual("76687474703a2f2f7777772e6578616d706c652e636f6d", str)
     }
     
+    func testWriteBytes() throws {
+        let str = try writeSingleHex(.byteString(Data([0x1, 0x2, 0x3])))
+        XCTAssertEqual("43010203", str)
+    }
+    
     // writer can't do tagged values yet
     
     func testWriteEmptyArray() throws {
@@ -346,6 +351,16 @@ class CborWriteTests: XCTestCase {
                 .array([.integer(4), .integer(5)]),
             ]))
         XCTAssertEqual("gwGCAgOCBAU=", str)
+    }
+    
+    func testWriteArrayOfStringsAndBytes() throws {
+        let str = try writeSingleBase64(.array([
+            .textString("Signature1"),
+            .byteString(Data([0x1, 0x2, 0x3])),
+            .byteString(Data([0x5, 0x6, 0x7])),
+            .textString("Trailer"),
+        ]))
+        XCTAssertEqual("hGpTaWduYXR1cmUxQwECA0MFBgdnVHJhaWxlcg==", str)
     }
     
     // writer can't do maps yet
