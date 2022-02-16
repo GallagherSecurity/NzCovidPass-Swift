@@ -1,9 +1,14 @@
 # NzCovidPass-Swift
 Swift library for verification of the NZ Covid Vaccination Pass according to https://nzcp.covid19.health.nz/
 
-Copyright (c) 2021 Gallagher Group Ltd
+This library provides the Gallagher NZ Vaccine pass integration as used by the Gallagher Command Centre mobile application for iOS:
 
-Licensed under the MIT License
+* [Press Release](https://security.gallagher.com/en/News-and-Awards/News/Gallagher-empowers-customers-to-manage-vaccine-mandates-with-enhancement-to-Command-Centre-Mobile)
+* [Command Centre Mobile application](https://products.security.gallagher.com/security/global/en/products/software/command-centre-licenses/command-centre-mobile-app/p/2A8559)
+
+Gallagher Security makes this library available for others to freely use under the MIT License, to encourage and simplify New Zealand vaccine pass verification.
+
+Copyright (c) 2022 Gallagher Group Ltd
 
 ## Overview:
 
